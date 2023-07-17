@@ -1,0 +1,68 @@
+@import 'variables.scss';
+
+.form-container {
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: $main-black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all 1s;
+}
+
+.correct {
+    opacity: 0;
+    visibility: hidden;
+}
+
+
+
+.form {
+    width: 450px;
+    padding: 20px;
+    background-color: $main-white;
+    display: grid;
+    grid-row-gap: 5px;
+}
+
+.form-label {
+    display: block;
+    font-size: 18px;
+    line-height: 20px;
+    font-weight: 700;
+    padding-bottom: 10px;
+}
+
+.form-input {
+    height: 40px;
+    padding-left: 7px;
+    border-radius: 10px;
+    width: 100%;
+    font-size: 18px;
+    background-color: $main-white;
+    outline: none;
+    border: 0.5px solid gray;
+    transition: all 0.5s ease 0s;
+
+    &:focus {
+        box-shadow: 0 0 5px rgb(10, 108, 253);
+    }
+}
+
+
+.form-input-error {
+    box-shadow: 0 0 10px $error;
+}
+
+.error-message-container {
+    width: 100%;
+    height: 40px;
+}
+
+.error-message, .user-undefined {
+    color: $error;
+    padding-left: 5px;
+}

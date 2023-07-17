@@ -1,0 +1,136 @@
+@import 'variables.scss';
+
+* {
+    box-sizing: border-box;
+}
+
+div,
+h2,
+h3,
+p {
+    padding: 0;
+    margin: 0;
+}
+
+.wrapper {
+    max-width: 1320px;
+    min-height: 100vh;
+    margin: 0 auto;
+    background-color: $background-color;
+}
+
+.user-container {
+    display: grid;
+    grid-row-gap: 10px;
+}
+
+.user-block {
+    padding-top: 10px;
+}
+
+.page {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-gap: 20px;
+    text-align: center;
+}
+
+.page-email {
+    padding: 10px 0;
+}
+
+.active {
+    display: none;
+}
+
+.button-block {
+    display: flex;
+    justify-content: space-around;
+}
+
+.button {
+    width: 90px;
+    height: 20px;
+    text-transform: uppercase;
+    font-size: 14px;
+    line-height: 16px;
+    border: none;
+    border-radius: 5px;
+    color: $main-white;
+    background-color: $button-color;
+    cursor: pointer;
+    position: relative;
+    top: 0;
+
+    &.button-login {
+        width: 100%;
+        height: 40px;
+        margin-top: 15px;
+        font-size: 18px;
+        letter-spacing: 2px;
+        font-weight: 700;
+        background-color: brown;
+        transition: all 0.4s ease-in;
+    }
+
+    &:hover {
+        background-color: $button-color-hover;
+    }
+
+    &:active {
+        top: 3px;
+    }
+}
+
+.error {
+    height: 14px;
+    color: $error;
+    font-size: 12px;
+}
+
+.new-users-container {
+    margin-top: 20px;
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+}
+
+.add-user {
+    padding: 10px 20px;
+    background-color: $add-user;
+}
+
+.add-user-title {
+    padding-bottom: 10px;
+}
+
+
+.user-input {
+    width: 100%;
+    height: 30px;
+    padding-left: 5px;
+    margin: 5px 0 5px 0;
+}
+
+.new-users-block {
+    border: 1px solid black;
+}
+
+.new-users-title {
+    text-align: center;
+}
+
+.create-users {
+    display: grid;
+    grid-template-columns: 30px 1fr 1fr 1fr;
+    padding: 10px;
+    text-align: center;
+    background-color: $main-yellow;
+    font-weight: 700;
+}
+
+.newCard {
+    display: grid;
+    grid-template-columns: 30px 1fr 1fr 1fr;
+    padding: 10px;
+    text-align: center;
+}
